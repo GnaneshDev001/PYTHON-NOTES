@@ -10,7 +10,7 @@ try:
 
     cursor.execute(sql_st)
     employees=cursor.fetchall()
-    #print(employees)
+    print(employees)
     for emp in employees:
         print(emp[1])
 except mysql.connector.Error as err:
