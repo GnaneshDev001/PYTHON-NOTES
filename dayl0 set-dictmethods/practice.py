@@ -1,0 +1,40 @@
+enames={101,102,103,104}
+emp=enames.copy()
+print(emp)
+#update
+enames.add(109)
+print(enames)
+enames.update({108,107})
+print(enames)
+#delete
+enames.pop()
+print(enames)
+enames.remove(109)
+print(enames)
+enames.discard(110)
+print(enames)
+enames.clear()
+print(enames)
+############################################################################
+#dict 
+users={
+    "id":11,
+    "name":"gnana",
+    "salary":43000,
+    "loc":"banglore"
+}
+#read
+values=users.values()
+print(values)
+keys=users.keys()
+print(keys)
+items=users.items()
+print(items)
+print(users.get("id"))
+#delete
+users.pop("loc")
+print(users)
+users.popitem()
+print(users)
+users.clear()
+print(users)

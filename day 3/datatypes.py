@@ -1,0 +1,41 @@
+eid=101;
+ename='gnana';
+esal=34000;
+avail= False
+
+print(type(eid))
+print(type(ename))
+print(type(esal))
+print(type(avail))
+
+eid=101
+esal=45000;
+ename="rahul"
+c=10+20j
+avail=True
+eids=[101,102,103,104,'gnana']
+unames=("rg",'sg',"gnana","mahi",23.45,True)
+number={10,20,30,10,10,20,30}
+emp={
+    eid:101,
+    ename:'gandhi',
+}
+b=bytes([10,20,30,40])
+ba=bytearray([10,20,30,40])
+fs=frozenset({10,20,30,40})
+r=range(100)
+n=None
+print(type(eid))
+print(type(esal))
+print(type(ename))
+print(type(c))
+print(type(avail))
+print(type(eids))
+print(type(unames))
+print(type(number))
+print(type(emp))
+print(type(b))
+print(type(ba))
+print(type(fs))
+print(type(r))
+print(type(n))

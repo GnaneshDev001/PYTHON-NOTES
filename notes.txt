@@ -1,0 +1,585 @@
+----------------------------------------Python---------------------------------------------------
+
+python is a general purpose, high level language,interpretted,oop programming language.
+Supporting oop features,functional&scripting programming language.
+python was developed by Gudio Van rossam in 1989 at NIT Netherlands.
+
+----OOP----
+hello world
+three.py
+
+class test:
+def greet(self):
+print("hello world")
+t1=test()
+t1.greet()
+
+-----functional pl-----
+hello world
+two.py
+
+def greet():
+print ("hello world")
+greet()
+greet() //no of times we can call //
+cmd>py  two.py
+
+-----Scripting pl-----
+hello world
+one.py
+
+print("hello world")
+cmd>py one.py
+-----------------------------
+python inbuilt functions = 45
+------------------------------
+print()
+input()
+type()
+id()
+---------------------------
+python errors=25
+-----------------------
+syntax error
+index error
+attrinute error
+identation error
+variable error
+key error
+file error
+-----------------
+create
+------------
+eid=101
+ename='rahul'
+esal=43000.45
+--------------
+Read
+------------------
+print(eid)
+print(ename)                                                                                                                                                                
+print(esal)
+--------------------
+update
+---------------
+ename='rahuljr'
+print(ename)
+------------------
+delete
+----------------
+del ename
+print(ename)
+-----------------------------------------------------------------------------------------------------------------------
+compiler/interpretetor=convert high level code to low level code (human readible format code to machine reading binary format code)
+both will execute line by line.
+**compiler analyze the whole code if there is no syntax error it  compiles and executes performs line to line execution at a time.
+**if any syntax error occurs it stops compliation process(no output).
+------------------------------------------------------
+interpretator:
+if there is no syntax error it will executes.            | whether error is THERE NOT performs line by line execution.
+if any syntax error is there it executes line by line    |
+
+pass keyword= maintain dummy block
+
+id()= return address
+-----------------------------
+python inbuilt functions
+----------------------------
+print()= print the result.
+type()= return the data type.
+len()=return the length of the sequence.
+input()=read data from user.
+min()
+max()
+
+def=keyword|wish()=function name
+pass,class,for,super,yield,this,true,false,none,if,else,elif,in,and,is,or,not
+break,continue,return,lambda,nonlocal,global,=keywords.
+
+ identifier: name in python program.
+ 16/10/2025
+ --------------------------------------------------------------------------------------------------
+ python data types:
+ primitive dt holding single value. non-primitive dt holding multiple values(java script).
+ In python there are 14 data types:
+ 
+ <class int><class float><class str> <class compiler><class bool><class list><class tuple><class set>
+ <class dict><class bytes><class bytearray><class frozenset><class range><class nontype>
+  
+  Mutable data types =CHANGING  =4 list(),bytearray(),set(),
+  immutables =not change =10
+  
+  Set dupilcates are not allowed where tuple,list allows.
+  
+cls-4:
+=======   
+update:
+--------
+enames[3]="modi"
+delete:
+----------
+del enames[3]
+ enames.pop()    (pop is the method)
+ 
+ 
+ TUPLE:
+ ===========
+ CREATE:
+ ----------
+ tuple isthe immutable object
+ read only version of list
+
+ SET:
+ =====
+ *group of elements,values as one entity
+ *duplicates are not allowed but allowed heterogenous
+ *indexing not applicable
+ *set is mutable
+ *insertion order not maintained
+ WHEN TO USE:uniqueness matters
+ how to create empty set:using set() keyword we create empty set
+ CERATE:
+ --------
+ s1={}   #dict
+ s2={10}  #set
+ s3={10,20,10,10,10}
+ s4={10,20.5,true,false,[],(1)}
+ READ:
+ -----
+
+DICT:
+=========
+group of key: value pairs,properties,mapped value as one entity
+duplicate keys are not allowed
+list,set,dict,bytearray these four only mutable
+how to read dict values: using key values we read
+create:
+------
+d1={}
+emp={
+     'eid':101
+	 'ename':'rahul'
+	 'esal':434645
+	}
+	
+	
+cls-6:
+======
+range(): to generate the sequence
+       *range([start],end,[step]
+	   *In Python, range() is a built-in function that generates an immutable sequence of numbers.
+	   It is commonly used in for loops to iterate a specific number of times or over a sequence of integers.
+	   *In Python, range() is a built-in function that generates an immutable sequence of numbers
+	   
+python operator:
+---------------
+arthametic operator: +,-,,/,%,*,//
+logical:and ,or
+relational:<,<=,>,>=,==
+unary operators:not
+special:memebership operator: in,notin
+        identity operators:is,isnot
+bitwise operators:
+
+
++:addition:
+  *a=10
+b=12
+c=30.5
+d="rahul"
+e="gandhi"
+f=True
+g=False
+print(a+b)#22
+print(a+c)#40.5
+#print(a+d) #TypeError: unsupported operand type(s) for +: 'int' and 'str'
+#print(a+e) #TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print(a+f) #11
+print(a+g)#10
+
+  
+  concatination:print(d+e) #concatination
+  
+*:multiplication:
+    a=10
+    b=23
+   print(a*b)	
+	
+  repetetion: one of the value is string and another one is int then only perform
+   a=10
+   b="rahul"
+   print(a*b)
+Divison:/
+======----
+division always gives float point result
+a=10
+b=33
+print(a/b) #5.0
+//:
+---
+a=10
+b=33
+print(a//b) #5  
+cls-7:
+======
+membership operator:(in notin)
+--------------------
+*to verify element,value,object,item present  in sequence or not
+enames=["rg","pg","sh","hf"]
+print("rg" in enames) #true
+print("Rg" in enames)#false
+print("alia" not in enames)#true
+ identity operator:(is is not)
+ ====================
+ *address comparsion operator
+ *id() function returns the address of function
+ a=10
+b=[10,20,30]
+c=[10,20,30]
+print(id(a))
+print(id(b[0]))
+print(id(c[0]))
+print(b[0] is c[0]) #true (address same)
+print(b is c)  #false
+
+control flow statement:
+========================
+conditional statement: if,if else,if elif,if elif else
+note:thre is no switch statements
+iterative statements:forloop,while loop
+note:in py no do while loop 
+CLS-8:
+itrative statement:
+=====================
+while condition st:
+    st1
+	st2
+	|
+	|
+	inc/dec
+	
+end="\n"=newline
+end="\t"=tabspace
+end="\n"=side
+for loop:
+=========
+iteralble your sequence list,tuple,set,str,bytes,ba,fz,range
+for sequence inseq:
+  st1
+  st2
+ 
+ eids=[1,2,3,3,4]
+ for eid in eids:
+     print(eid)
+	 
+ enames=("rg","dad","mom","bro")
+ for ename in ename:
+ print(ename)
+  
+ numbers={10,23,23,21,12,10}
+ for number in numbers:
+    print(numbers) 
+range(start,end,step)
+range(5,52,5)#5,10,15,20,---50
+cls-9:
+=======
+eids={101,102,103,104}
+iterable set operator?
+for eid in eids:
+    print(eid)
+	
+ser is iterable object but only for loop because indexing is not there
+
+enames=["rg","gh","dg"]
+for ename in enames :
+    print(ename)
+	
+enames=["rg","gh","dg"]
+i=0
+while i<=len(enames)-1:
+    print(enames[i])
+    i=i+1
+
+list:
+====
+group of elements as one entity
+duplicate & heterogenous elements are allowed
+list elements string based on indexing(0-n-1)
+-ve indexing possible
+we can iteratable list for,while
+list is mutable object
+order maintained
+create:
+=======
+eids =[]
+tuple:
+=======
+group of elments as one entity
+allowed duplicates&heterogenous
+indexing is possible 0 to n-1
+-ve indexing is possible
+we can iterate using for loop while loop
+tuple is the immutable(((((((((we calcn't insert or add another value to the object))))))).
+tuple is read only version of list
+order maintained
+create:
+==========
+t1=()
+eids=(10101,1221,1210)
+set:
+====
+group of elements as one entity
+duplicates are not allowed
+allows heterogenous elements
+indexing is not possible
+we can itrabble using only for loop
+insertion order not maintained
+set is mutable object
+create
+
+Dict:
+=====
+group of key value pairs as one entity
+duplicates are not allowed but allowed values
+indexing not applicable
+no order guarantee
+dict is iterable object
+
+29/10/2025
+--------------------------------------------------------------------------
+range function
+example:
+for num in range(1(starting),10(ending),2(stepping)): when the stepping is positive value then ending value gets -1 
+    print(num)                                      : when the stepping is negative value then ending value gets +1
+o/p:1
+3
+5
+7
+9
+----------------
+ def login():
+	pass
+ PY function= reperesents group of statements  for specific purpose. 
+execute the bussiness logic and return the value.
+code reusability, declare once and invoke many times.
+
+def add(formal arguments):
+print("login")
+add(10,20)=positional arguments.
+----------------------------------------------------------------------------------
+Argumnents are 4 types 1.positional 2.variable length 3.default 4.keyword arguments.
+-----------------------------------------------------------------------------------
+ positional=when their positions are changed then result will be changed.
+ ex:def wish(a,b):
+    print(a-b)
+wish(100,200)    #-100
+wish(200,100)    #100 result will change when arguments are changed
+
+ keyword = when their positions are changed then result will be changed.here we will declare with variable
+ ex:def calc(a,b):
+    print(a-b)
+calc(a=100,b=200)  #-100  
+calc(b=200,a=100)   #-100  no result will change.  
+
+default = when the argument is missed it takes the default value.
+always default arguments must be in last position. 
+ex:def void(a,b,c=100):
+    print(a+b+c)
+void(100,200,300)    
+void(200,100)    	
+ 
+ variable length=when there is an extra argument we place "*" in last argument then b value takes as tuple values b=ex:(10,20,30,)
+ ex:def run(a,*b):
+    print("a:",a,"b:",b)
+run(10,20)
+run(10,20,30)
+run(10,20,30,40)
+run(10,20,30,40,50)
+
+30/10/2025
+--------------------------------------------------------------------------------
+we can iterate the object using for loop.
+return= stops the iteration and comes out of the block. we will use at function/method level
+BREAK= stops the iteration and comes out of the loop.we will use at iteration level.
+continue=skip the current iteration and execute next one.
+-----------------------------------------------------------------------------------
+31/10/2025
+---------------------------------------------------------------------------------
+list[]
+create------------
+l1=[]
+12=list()
+eids=[101,102,103,104,101]
+---------------------------------
+read methods
+eids.count(102)//return no of occurance of specified elements.
+eids.index(102) ///return index of element of first occurance
+-----------------------------------------------------
+update
+eids.append(105)///add element end of the list.
+eids.insert(1,109)insert element 109 @specified index.
+eids.extend([110,111,112]) to extend the list by using new list.
+eids.reverse()//to reverse the object.
+eids.sort() sort in a-z. ascending order.
+eids.sort(reverse=True) sort in desecneding order.
+--------------------------------------------------------
+delete
+eids.pop()//remove last element from list and return it.
+eids.remove(104)///remove specified eleement from list.
+eids.clear()//remove all elementsfrom the list.
+
+eid=eids.copy()//entire list copied to another list.
+------------------------------------------------------------
+03/10/2025
+-----------------------------------------------------------
+set and dict methods:
+create
+---------------------
+eids=eids.copy()
+-----------------------
+read:
+eid.count(101)
+---------------
+update:
+eids.add() #add specified element to the  set Object
+eids.update()#add another set elements to your set object ({101,102,103})
+----------------------------------------
+delete:
+eids.pop()#removes(random element)and returns an arbitrary  element from the set.
+eids.remove()#removes a specific element from the set. raises KeyError if the element is not found.
+eids.discard()#removes a specific element from the set.if the element is not found no error is raised.
+eids.clear()##removes all elements from the set.
+-------------------------------------------------------
+dict-methods:
+create:
+------------------
+emp={}
+emp={
+     'eid':101,
+	 'ename':"gnana",
+	 'esal:43000'
+	 }
+user=emp.copy()
+----------------------------------------
+read:
+emp.values() return all the values #returns a view object that displays a list of all the values in the dictionary.
+emp.keys() return the all the keys #returns a view object that displays a list of all the keys in the dictionary.
+emp.items() return all the key,values. #returns a view object that displays a list of a dictionary's key-value tuple pairs.
+emp.get('eid') #returns the value of the specified key.
+-----------------------------------------
+update -none
+---------------------------
+delete:
+emp.pop()#removes the specified key and returns the corresponding value.
+emp.popitem()#removes and returns the last inserted key-value pair as a tuple.
+emp.remove('eid')
+emp.clear()  #removes all items from the dictionary.
+-----------------------------------------------
+04/10/2025
+every python file acting as module:
+ 1.user defined==
+ def login():
+ print()
+ class accord:
+ pass
+-----------------
+2.inbuilt modules:
+math.py
+json.py
+csv.py
+os.py
+random.py
+
+import modules like import module1,module2,modiule3....
+print(module.number1)
+print(module.number2)
+print(module.number3)
+{Or}
+from module import number1,number2....
+from module import* /// import all the numbers at a time.
+{Or}
+from module import number1 as employeeid //writing as a alias name
+from module import number2 as employeename //writing as a alias name
+from module import number3 as employeesalary//writing as a alias name
+
+when we want module number we use "help" function
+
+randint= generate random numbers in the range
+-------------------------------------------------------------------	
+05/10/2025
+-------------------------------------------------------------------
+inner functions:
+def calc():
+    print("calculation")
+    def add():
+        print("addition")
+    add()
+    def multi():
+        print("miltiplication")
+    multi()
+calc()
+
+how to invoke inner func from outside?
+=>return the inner function reference
+
+file handling:
+-----------------
+text file modes:
+r=read   r+ read&write
+w-write   w+ read&write
+a-append   a+ append&read
+x=exclusive
+---------------------
+binary file modes:
+rb  rb+
+wb   wb+
+ab    ab+
+xb
+
+fp.read()filepointer toread
+fp.readline()tpo readline
+fp.write()filepointer write
+-----------------------------------------------------
+06/10/2025
+json,csv file handling:
+json:
+================
+load,dump==py to json stringfiles
+loads,dumps===string files to python file(object)
+--------------------------------------------------
+07/10/2025
+=================
+backend developer devlops rest APIs
+how to invoke rest APIs == using 'request' module
+how to test rest APIs == using postman,, http methods=get,post,put,delete,patch methods
+how to invoke get method == request.get(),request.post(),request.put(),request.delete()
+================================================
+10/11/25
+ETL-Task:
+==========
+usage:fetch all users
+rest api:json/ /users
+method:get
+reg fields:none 
+acess type:public
+
+task:invoke api:
+     write uid,uname,email,city
+	 into a)new json
+	      b)newcsv file
+		  c)new usertable-mysql
+		  d)new user collection-mangodb
+===============================
+11/11/2025
+how  to handle errors in python:
+using try,except,finally,raise
+To avoid program termination abnormally we are using error handling.
+try:
+-------------
+risky statement
+except:
+-----------
+handling errors/alternative code
+multiple excepts will also posiible.
+
+PDBC:python database connection

@@ -1,0 +1,7 @@
+ln=open("data.txt","r")
+ln1=open("wish.txt","w")
+data=ln.read()
+ln1.write(data)
+print("content transfered")
+ln.close()
+ln1.close()

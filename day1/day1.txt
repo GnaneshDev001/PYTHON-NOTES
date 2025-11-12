@@ -1,0 +1,77 @@
+----------------------------------------Python---------------------------------------------------
+
+python is a general purpose, high level language,interpretted,oop programming language.
+Supporting oop features,functional&scripting programming language.
+python was developed by Gudio Van rossam in 1989 at NIT Netherlands.
+
+----OOP----
+hello world
+three.py
+
+class test:
+def greet(self):
+print("hello world")
+t1=test()
+t1.greet()
+
+-----functional pl-----
+hello world
+two.py
+
+def greet():
+print ("hello world")
+greet()
+greet() //no of times we can call //
+cmd>py  two.py
+
+-----Scripting pl-----
+hello world
+one.py
+
+print("hello world")
+cmd>py one.py
+-----------------------------
+python inbuilt functions = 45
+------------------------------
+print()
+input()
+type()
+id()
+---------------------------
+python errors=25
+-----------------------
+syntax error
+index error
+attrinute error
+identation error
+variable error
+key error
+file error
+-----------------
+create
+------------
+eid=101
+ename='rahul'
+esal=43000.45
+--------------
+Read
+------------------
+print(eid)
+print(ename)                                                                                                                                                                
+print(esal)
+--------------------
+update
+---------------
+ename='rahuljr'
+print(ename)
+------------------
+delete
+----------------
+del ename
+print(ename)
+
+
+
+
+
+
