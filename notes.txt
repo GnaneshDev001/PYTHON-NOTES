@@ -566,7 +566,7 @@ acess type:public
 task:invoke api:
      write uid,uname,email,city
 	 into a)new json
-	      b)newcsv file
+	      b)new csv file
 		  c)new usertable-mysql
 		  d)new user collection-mangodb
 ===============================
@@ -583,3 +583,7 @@ handling errors/alternative code
 multiple excepts will also posiible.
 
 PDBC:python database connection
+====================================
+13/11/2025
+------------------------------
+

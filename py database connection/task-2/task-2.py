@@ -39,7 +39,7 @@ try:
     print(dbcon.is_connected())
     cursor=dbcon.cursor()
     sql_st='''
-    create table  if not exists Products(
+    create table  Products(
                         uid int primary key,
                         uname varchar(64) not null,
                         price float,
