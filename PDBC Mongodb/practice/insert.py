@@ -1,0 +1,39 @@
+import pymongo
+from pymongo import MongoClient
+client=None;
+client=MongoClient('mongodb://localhost:27017/')
+db=client['db5']
+user_data=db['users']
+users=[
+    {"id":1,"name":"Yasmin","gender":"Female"},
+    {"id":2,"name":"Mollie","gender":"Genderqueer"},
+    {"id":3,"name":"Merralee","gender":"Female"},
+    {"id":4,"name":"Cherice","gender":"Non-binary"},
+    {"id":5,"name":"Libbey","gender":"Female"},
+    {"id":6,"name":"Kacy","gender":"Female"},
+    {"id":7,"name":"Granthem","gender":"Male"},
+    {"id":8,"name":"Roxana","gender":"Female"},
+    {"id":9,"name":"Glendon","gender":"Male"},
+    {"id":10,"name":"Mame","gender":"Genderqueer"},
+    {"id":11,"name":"Gwennie","gender":"Female"},
+    {"id":12,"name":"Tommie","gender":"Male"},
+    {"id":13,"name":"Lombard","gender":"Male"},
+    {"id":14,"name":"Robin","gender":"Male"},   
+    {"id":15,"name":"Denys","gender":"Male"},
+    {"id":16,"name":"Patrizio","gender":"Male"},
+    {"id":17,"name":"Hallsy","gender":"Non-binary"},
+    {"id":18,"name":"Peder","gender":"Male"},
+    {"id":19,"name":"Kennett","gender":"Male"},
+    {"id":20,"name":"Emlen","gender":"Male"},
+    {"id":21,"name":"Hilton","gender":"Male"},
+    {"id":22,"name":"Benedict","gender":"Male"},
+    {"id":23,"name":"Corina","gender":"Female"},
+    {"id":24,"name":"Augusto","gender":"Male"},
+    {"id":25,"name":"Dru","gender":"Female"},
+    {"id":26,"name":"Sheppard","gender":"Male"},
+    {"id":27,"name":"Inger","gender":"Female"},
+    {"id":28,"name":"Aksel","gender":"Male"},
+    {"id":29,"name":"Jarrett","gender":"Male"},
+    {"id":30,"name":"Buddie","gender":"Male"}]
+user_data.insert_many(users)
+print("new users are created")
